@@ -19,4 +19,4 @@ def sort_names(names, scores):
     # sort names based on scores using argsort
     sorted_indices = np.argsort(scores)
     sorted_names = [names[i] for i in sorted_indices]
-    return sorted_names
+    return sorted_names[::-1] # return in descending order
